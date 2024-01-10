@@ -1,6 +1,6 @@
 {
     "id": "com.rohitchouhan.smartflatfileload",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Smart Flat File Load",
     "description": "A sophisticated widget designed for loading master data and fact data from stories using xlsx and csv formats.",
     "newInstancePrefix": "SmartFlatFileLoad",
@@ -15,7 +15,7 @@
         {
             "kind": "main",
             "tag": "com-rohitchouhan-smartflatfileload",
-            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.0/dist/SmartFlatFileLoad.bundle.js",
+            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load/dist/SmartFlatFileLoad.bundle.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
@@ -31,6 +31,10 @@
         },
         "dataDefaultValues": {
             "description": "Base for storing default values for master data mapping.",
+            "type": "Selection"
+        },
+        "mappingAssetSelection": {
+            "description": "Base for storing mapping asset selection.",
             "type": "Selection"
         }
     },
@@ -67,6 +71,17 @@
                 }
             ],
             "body": "this.dataDefaultValues = dataDefaultValues;"
+        },
+        "setAssetMapping": {
+            "description": "Sets up mapping for assets.",
+            "parameters": [
+                {
+                    "name": "mappingAssetSelection",
+                    "type": "Selection",
+                    "description": "Mapping selection object."
+                }
+            ],
+            "body": "this.mappingAssetSelection = mappingAssetSelection;"
         }
     },
     "events": {}
