@@ -7,7 +7,7 @@
     "vendor": "Deloitte | rohitchouhan@deloitte.com",
     "eula": "Deloitte",
     "license": "MIT",
-    "icon": "http://localhost:3000/icon.png",
+    "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.0/icon.png",
     "imports": [
         "datasource"
     ],
@@ -15,7 +15,7 @@
         {
             "kind": "main",
             "tag": "com-rohitchouhan-smartflatfileload",
-            "url": "http://localhost:3000/dist/SmartFlatFileLoad.bundle.js",
+            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.0/dist/SmartFlatFileLoad.bundle.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
