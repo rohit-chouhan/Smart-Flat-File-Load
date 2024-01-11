@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "webpack --config webpack.config.js",
-    "vupdate": "node version.js",
-    "publish": "npm run vupdate && git add . && git commit -m 'Bump version' && git push origin main"
+    "update": "node version.js"
   },
   "author": "Rohit Chouhan",
   "license": "ISC",
