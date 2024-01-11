@@ -7,7 +7,7 @@
     "start": "node index.js",
     "build": "webpack --config webpack.config.js",
     "update": "node version.js",
-    "publish": "git add . && git commit -m '2.0.1' && npm version patch && git push origin main && git tag 2.0.1 && git push --tags"
+    "publish": "git add . && git commit -m 'updated' && npm version patch -m 'Bump version to %s' && git push origin main && git push --tags"
   },
   "author": "Rohit Chouhan",
   "license": "ISC",
