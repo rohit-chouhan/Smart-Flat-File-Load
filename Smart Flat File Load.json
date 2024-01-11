@@ -1,13 +1,13 @@
 {
     "id": "com.rohitchouhan.smartflatfileload",
-    "version": "1.0.1",
+    "version": "1.0.4",
     "name": "Smart Flat File Load",
     "description": "A sophisticated widget designed for loading master data and fact data from stories using xlsx and csv formats.",
     "newInstancePrefix": "SmartFlatFileLoad",
     "vendor": "Deloitte | rohitchouhan@deloitte.com",
     "eula": "Deloitte",
     "license": "MIT",
-    "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.1/icon.png",
+    "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.4/icon.png",
     "imports": [
         "datasource"
     ],
@@ -15,7 +15,7 @@
         {
             "kind": "main",
             "tag": "com-rohitchouhan-smartflatfileload",
-            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.1/dist/SmartFlatFileLoad.bundle.js",
+            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.4/dist/SmartFlatFileLoad.bundle.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
@@ -35,6 +35,10 @@
         },
         "mappingAssetSelection": {
             "description": "Base for storing mapping asset selection.",
+            "type": "Selection"
+        },
+        "assetDefaultValues": {
+            "description": "Base for storing default values for asset mapping.",
             "type": "Selection"
         }
     },
@@ -82,6 +86,17 @@
                 }
             ],
             "body": "this.mappingAssetSelection = mappingAssetSelection;"
+        },
+        "setAssetDefaultValues": {
+            "description": "Sets up default values mapping for assets.",
+            "parameters": [
+                {
+                    "name": "assetDefaultValues",
+                    "type": "Selection",
+                    "description": "Mapping selection object."
+                }
+            ],
+            "body": "this.assetDefaultValues = assetDefaultValues;"
         }
     },
     "events": {}
