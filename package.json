@@ -1,13 +1,13 @@
 {
   "name": "flatfileload",
-  "version": "1.0.7",
+  "version": "1.0.0",
   "description": "A custom widget to create master data",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "build": "webpack --config webpack.config.js",
     "update": "node version.js",
-    "publish": "git add . && git commit -m '1.0.7' && git push origin main && git tag 1.0.7 && git push --tags"
+    "publish": "git add . && git commit -m '1.0.1' && git push origin main && npm version patch && git tag 1.0.1 && git push --tags"
   },
   "author": "Rohit Chouhan",
   "license": "ISC",
