@@ -1,103 +1,103 @@
 {
-    "id": "com.rohitchouhan.smartflatfileload",
-    "version": "1.0.5",
-    "name": "Smart Flat File Load",
-    "description": "A sophisticated widget designed for loading master data and fact data from stories using xlsx and csv formats.",
-    "newInstancePrefix": "SmartFlatFileLoad",
-    "vendor": "Deloitte | rohitchouhan@deloitte.com",
-    "eula": "Deloitte",
-    "license": "MIT",
-    "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.5/icon.png",
-    "imports": [
-        "datasource"
-    ],
-    "webcomponents": [
+  "id": "com.rohitchouhan.smartflatfileload",
+  "version": "1.0.7",
+  "name": "Smart Flat File Load",
+  "description": "A sophisticated widget designed for loading master data and fact data from stories using xlsx and csv formats.",
+  "newInstancePrefix": "SmartFlatFileLoad",
+  "vendor": "Deloitte | rohitchouhan@deloitte.com",
+  "eula": "Deloitte",
+  "license": "MIT",
+  "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.7/icon.png",
+  "imports": [
+    "datasource"
+  ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-rohitchouhan-smartflatfileload",
+      "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.7/dist/SmartFlatFileLoad.bundle.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "modelId": {
+      "description": "The Model ID to be used during jobs.",
+      "type": "string"
+    },
+    "dataMapping": {
+      "description": "Base for storing master data mapping.",
+      "type": "Selection"
+    },
+    "dataDefaultValues": {
+      "description": "Base for storing default values for master data mapping.",
+      "type": "Selection"
+    },
+    "mappingAssetSelection": {
+      "description": "Base for storing mapping asset selection.",
+      "type": "Selection"
+    },
+    "assetDefaultValues": {
+      "description": "Base for storing default values for asset mapping.",
+      "type": "Selection"
+    }
+  },
+  "methods": {
+    "setModel": {
+      "description": "Sets up the default model for jobs.",
+      "parameters": [
         {
-            "kind": "main",
-            "tag": "com-rohitchouhan-smartflatfileload",
-            "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@1.0.5/dist/SmartFlatFileLoad.bundle.js",
-            "integrity": "",
-            "ignoreIntegrity": true
+          "name": "modelId",
+          "type": "string",
+          "description": "Technical ID of the model."
         }
-    ],
-    "properties": {
-        "modelId": {
-            "description": "The Model ID to be used during jobs.",
-            "type": "string"
-        },
-        "dataMapping": {
-            "description": "Base for storing master data mapping.",
-            "type": "Selection"
-        },
-        "dataDefaultValues": {
-            "description": "Base for storing default values for master data mapping.",
-            "type": "Selection"
-        },
-        "mappingAssetSelection": {
-            "description": "Base for storing mapping asset selection.",
-            "type": "Selection"
-        },
-        "assetDefaultValues": {
-            "description": "Base for storing default values for asset mapping.",
-            "type": "Selection"
-        }
+      ],
+      "body": "this.modelId = modelId;"
     },
-    "methods": {
-        "setModel": {
-            "description": "Sets up the default model for jobs.",
-            "parameters": [
-                {
-                    "name": "modelId",
-                    "type": "string",
-                    "description": "Technical ID of the model."
-                }
-            ],
-            "body": "this.modelId = modelId;"
-        },
-        "setDataMapping": {
-            "description": "Sets up the mapping for master data.",
-            "parameters": [
-                {
-                    "name": "dataMapping",
-                    "type": "Selection",
-                    "description": "Mapping selection object."
-                }
-            ],
-            "body": "this.dataMapping = dataMapping;"
-        },
-        "setDataDefaultValues": {
-            "description": "Sets up default values mapping for master data.",
-            "parameters": [
-                {
-                    "name": "dataDefaultValues",
-                    "type": "Selection",
-                    "description": "Mapping selection object."
-                }
-            ],
-            "body": "this.dataDefaultValues = dataDefaultValues;"
-        },
-        "setAssetMapping": {
-            "description": "Sets up mapping for assets.",
-            "parameters": [
-                {
-                    "name": "mappingAssetSelection",
-                    "type": "Selection",
-                    "description": "Mapping selection object."
-                }
-            ],
-            "body": "this.mappingAssetSelection = mappingAssetSelection;"
-        },
-        "setAssetDefaultValues": {
-            "description": "Sets up default values mapping for assets.",
-            "parameters": [
-                {
-                    "name": "assetDefaultValues",
-                    "type": "Selection",
-                    "description": "Mapping selection object."
-                }
-            ],
-            "body": "this.assetDefaultValues = assetDefaultValues;"
+    "setDataMapping": {
+      "description": "Sets up the mapping for master data.",
+      "parameters": [
+        {
+          "name": "dataMapping",
+          "type": "Selection",
+          "description": "Mapping selection object."
         }
+      ],
+      "body": "this.dataMapping = dataMapping;"
     },
-    "events": {}
+    "setDataDefaultValues": {
+      "description": "Sets up default values mapping for master data.",
+      "parameters": [
+        {
+          "name": "dataDefaultValues",
+          "type": "Selection",
+          "description": "Mapping selection object."
+        }
+      ],
+      "body": "this.dataDefaultValues = dataDefaultValues;"
+    },
+    "setAssetMapping": {
+      "description": "Sets up mapping for assets.",
+      "parameters": [
+        {
+          "name": "mappingAssetSelection",
+          "type": "Selection",
+          "description": "Mapping selection object."
+        }
+      ],
+      "body": "this.mappingAssetSelection = mappingAssetSelection;"
+    },
+    "setAssetDefaultValues": {
+      "description": "Sets up default values mapping for assets.",
+      "parameters": [
+        {
+          "name": "assetDefaultValues",
+          "type": "Selection",
+          "description": "Mapping selection object."
+        }
+      ],
+      "body": "this.assetDefaultValues = assetDefaultValues;"
+    }
+  },
+  "events": {}
 }
