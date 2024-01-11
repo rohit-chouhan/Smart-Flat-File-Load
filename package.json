@@ -1,6 +1,6 @@
 {
   "name": "flatfileload",
-  "version": "1.0.7",
+  "version": "1.0.5",
   "description": "A custom widget to create master data",
   "main": "index.js",
   "scripts": {
