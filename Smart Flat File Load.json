@@ -1,13 +1,13 @@
 {
   "id": "com.rohitchouhan.smartflatfileload",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "name": "Smart Flat File Load",
   "description": "A sophisticated widget designed for loading master data and fact data from stories using xlsx and csv formats.",
   "newInstancePrefix": "SmartFlatFileLoad",
   "vendor": "Deloitte | rohitchouhan@deloitte.com",
   "eula": "Deloitte",
   "license": "MIT",
-  "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.3/icon.png",
+  "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.4/icon.png",
   "imports": [
     "datasource"
   ],
@@ -15,7 +15,7 @@
     {
       "kind": "main",
       "tag": "com-rohitchouhan-smartflatfileload",
-      "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.3/dist/SmartFlatFileLoad.bundle.js",
+      "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.4/dist/SmartFlatFileLoad.bundle.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
