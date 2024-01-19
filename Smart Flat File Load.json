@@ -1,13 +1,13 @@
 {
   "id": "com.rohitchouhan.smartflatfileload",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "name": "Smart Flat File Load",
   "description": "A sophisticated widget designed for loading master data and fact data from stories using xlsx and csv formats.",
   "newInstancePrefix": "SmartFlatFileLoad",
   "vendor": "Deloitte | rohitchouhan@deloitte.com",
   "eula": "Deloitte",
   "license": "MIT",
-  "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.14/icon.png",
+  "icon": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.15/icon.png",
   "imports": [
     "datasource"
   ],
@@ -15,7 +15,7 @@
     {
       "kind": "main",
       "tag": "com-rohitchouhan-smartflatfileload",
-      "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.14/dist/SmartFlatFileLoad.bundle.js",
+      "url": "https://cdn.jsdelivr.net/gh/rohit-chouhan/Smart-Flat-File-Load@2.0.15/dist/SmartFlatFileLoad.bundle.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
@@ -155,6 +155,16 @@
     "getProjectToGetAssets": {
       "returnType": "string[]",
       "description": "Get auto generated id based on latest data"
+    },
+    "setImportType": {
+      "description": "Sets up the mapping for master data.",
+      "parameters": [
+        {
+          "name": "importType",
+          "type": "string",
+          "description": "Import job type"
+        }
+      ]
     }
   },
   "events": {}
